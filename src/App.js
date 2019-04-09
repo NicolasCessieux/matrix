@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import MatrixNico from './MatrixNico';
-import Col from './Col';
 import './App.css';
-
 
 class App extends Component {
   constructor(props) {

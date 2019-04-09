@@ -1,28 +1,15 @@
 import React from 'react';
 import Col from './Col';
 
-class MatrixNico extends React.Component{
+class MatrixNico extends React.Component {
     render() {
-       return(
-        <div>
-            <table>
-            <tr>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td>
-                <td><Col /></td> 
-                <td><Col /></td>
-                <td><Col /></td>
-            </tr>
-            </table> 
-        </div>)
-       }
- }
+        const tab = [];
+        const width = 10;
+        for (let i = 0; i < width; i++) {
+            tab.push(<td><Col /></td>)
+        }
+        return tab
+    }
+}
 
 export default MatrixNico;

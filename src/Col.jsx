@@ -1,66 +1,14 @@
 import React from 'react';
 
-const matrix=new Array();
-matrix[0]=new Array("1","0","0"); 
-matrix[1]=new Array("0","1","0");  
-matrix[2]=new Array("1","1","0"); 
-
-class Col extends React.Component{
+class Col extends React.Component {
     render() {
-       return(
-        <div>
-            <table>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-            </tr>
-            </table> 
-        </div>)
-       }
- }
+        const cells = [];
+        const width = 10;
+        for (let i = 0; i < width; i++) {
+            cells.push(<tr><td>0</td></tr>)
+        }
+        return cells
+    }
+}
 
 export default Col;
