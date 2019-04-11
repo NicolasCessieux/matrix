@@ -4,7 +4,7 @@ import Col from './Col';
 class MatrixNico extends React.Component {
     render() {
         const tab = [];
-        const width = 10;
+        const width = 30;
         for (let i = 0; i < width; i++) {
             tab.push(<td><Col /></td>)
         }

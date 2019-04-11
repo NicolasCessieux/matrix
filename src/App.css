@@ -2,7 +2,13 @@
   background-color: #000000;
   color: #08e900;
   text-align: center;
+  font-size: 2em;
 }
+
+.Char {
+  padding: 0.5em;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
