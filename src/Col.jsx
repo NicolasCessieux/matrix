@@ -1,16 +1,14 @@
 import React from 'react';
+import Cell from './Cell';
 
 class Col extends React.Component {
     render() {
         const cells = [];
-        const width = 10;
+        const width = 12;
         for (let i = 0; i < width; i++) {
-            cells.push(<tr><td>0</td></tr>)
+            cells.push(<tr><td><Cell /></td></tr>)
         }
-        function getRandomInt(width) {
-            return Math.floor(Math.random() * width);
-          }
-        return getRandomInt
+        return cells
     }
 }
 
