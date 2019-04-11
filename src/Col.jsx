@@ -7,7 +7,10 @@ class Col extends React.Component {
         for (let i = 0; i < width; i++) {
             cells.push(<tr><td>0</td></tr>)
         }
-        return cells
+        function getRandomInt(width) {
+            return Math.floor(Math.random() * width);
+          }
+        return getRandomInt
     }
 }
 
